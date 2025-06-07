@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+resources/payload.dmg
+installer/installer
+bins/aquila
