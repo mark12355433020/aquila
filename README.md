@@ -3,26 +3,10 @@
 <h3 align="left">Aquila. <br>iOS 6 untethered jailbreak for all devices<div align="right" style="float: top;">
 </br></h3> 
 
-
-## Installing:
+# Information:
 - Only macOS and Windows are supported
-- For more information on installing please refer to this [guide](https://ios.cfw.guide/using-aquila)
+- Guide for installing is available at [ios.cfw.guide](https://ios.cfw.guide/installing-aquila)
 - There is no warranty with this software, so use at your own risk.
-
-#### macOS:
-1. Download the latest version from [releases](https://github.com/staturnzz/aquila/releases/latest) and extract the zip
-2. Reboot your device and then plug it into your computer (unlock the device if it has a passcode)
-3. Open a terminal and then run `<path-to-aquila> --jailbreak` (i.e. `~/Downloads/aquila --jailbreak`)
-4. Wait for the jailbreak to complete, it can take 1-3 minutes depending on the device
-
-#### Windows:
-1. Download the latest version from [releases](https://github.com/staturnzz/aquila/releases/latest)
-2. If you do not have iTunes installed, download and install it from [apple.com/itunes](https://www.apple.com/itunes)
-3. Reboot your device and then plug it into your computer (unlock the device if it has a passcode)
-4. Open iTunes and make sure the device was found and paired, you can close iTunes after
-5. Open a command prompt and run `<path-to-aquila> --jailbreak` (i.e. `C:\Users\a\Downloads\aquila.exe --jailbreak`)
-6. Wait for the jailbreak to complete, it can take 1-3 minutes depending on the device
-
 
 # Credits:
 - [staturnz](https://github.com/staturnzz) - jailbreak and exploit
