@@ -25,8 +25,8 @@
 
 
 # Credits:
-- [staturnz](https://github./com/staturnzz) - jailbreak and exploit
-- [comex](https://github./com/comex) - ddi race condition and sandbox patch
-- [planetbeing](https://github./com/planetbeing) - ios-jailbreak-patchfinder
+- [staturnz](https://github.com/staturnzz) - jailbreak and exploit
+- [comex](https://github.com/comex) - ddi race condition and sandbox patch
+- [planetbeing](https://github.com/planetbeing) - ios-jailbreak-patchfinder
 - [PanguTeam](https://x.com/panguteam) - CVE-2014-4461 (kernel exploit bug)
 - [evad3rs](https://x.com/evad3rs) - amfid bypass method
