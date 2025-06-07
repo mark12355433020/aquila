@@ -12,7 +12,7 @@
 #### macOS:
 1. Download the latest version from [releases](https://github.com/staturnzz/aquila/releases/latest)
 2. Reboot your device and then plug it into your computer (unlock the device if it has a passcode)
-3. Open a terminal and run `<path-to-aquila> --jailbreak` (i.e. `~/Downloads/aquila --jailbreak`)
+3. Open a terminal and run `chmod +x <path-to-aquila>` then run `<path-to-aquila> --jailbreak` (i.e. `~/Downloads/aquila --jailbreak`)
 4. Wait for the jailbreak to complete, it can take 1-3 minutes depending on the device
 
 #### Windows:
