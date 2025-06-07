@@ -204,10 +204,11 @@ int show_non_default_apps(void) {
     return 0;
 }
 
-int install_bootstrap(void) {
+int install_jailbreak(void) {
+    bool no_bootstrap_install = false;
     if (access("/.aquila_installed", F_OK) == 0 || 
         access("/Applications/Cydia.app/Cydia", F_OK) == 0 ||
-        access("/.cydia_no_stash", F_OK) == 0) return 0;
+        access("/.cydia_no_stash", F_OK) == 0) no_bootstrap_install = true;
 
     launchctl_unsetenv();
     chmod("/private", 0755);
@@ -221,16 +222,22 @@ int install_bootstrap(void) {
     set_file_permissions("/private/var/aquila/_libmis.dylib", 0755, 0, 0);
     set_file_permissions("/private/var/aquila/bootstrap.tar", 0777, 501, 501);
 
-    run_tar("/private/var/aquila/bootstrap.tar", "/");
-    unlink("/private/var/aquila/bootstrap.tar");
-    print_log("[*] bootstrap installed\n");
+    if (!no_bootstrap_install) {
+        set_file_permissions("/private/var/aquila/bootstrap.tar", 0777, 501, 501);
+        run_tar("/private/var/aquila/bootstrap.tar", "/");
+        print_log("[*] bootstrap installed\n");
+    } else {
+        unlink("/private/var/aquila/bootstrap.tar");
+    }
 
     clear_mobile_installation_cache();
     show_non_default_apps();
     print_log("[*] non default apps set\n");
 
-    create_file("/.cydia_no_stash", 0644, 0, 0);
     create_file("/.aquila_installed", 0644, 0, 0);
+    if (!no_bootstrap_install) {
+        create_file("/.cydia_no_stash", 0644, 0, 0);
+    }
 
     DIR *dir = opendir("Library/LaunchDaemons");
     if (dir != NULL) {

@@ -79,7 +79,7 @@ int main(void) {
         return -1;
     }
 
-    install_bootstrap();
+    install_jailbreak();
     start_daemons();
     return 0;
 }

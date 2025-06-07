@@ -8,6 +8,6 @@ int set_file_permissions(const char *path, mode_t mode, uid_t uid, gid_t gid);
 void *load_file(const char *path, size_t *size);
 char *get_hw_model(void);
 int edit_plist(const char *path, void (^action)(CFMutableDictionaryRef plist));
-int install_bootstrap(void);
+int install_jailbreak(void);
 
 #endif /* install_h */
